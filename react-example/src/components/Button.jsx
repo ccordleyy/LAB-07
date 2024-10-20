@@ -1,11 +1,17 @@
-import { useState } from "react";
+import React from 'react';
 
-export const Button = () => {
-    const [count, setCount] = useState(0);
+const Button = () => {
   
-    return (
-      <button onClick={() => setCount(count + 5)}>
-        Clicks: {count}
-      </button>
-    );
+  const handleClick = () => {
+    const randomValue = Math.floor(Math.random() * 100) + 1;
+    alert(`El número aleatorio es: ${randomValue}`);
   };
+
+  return (
+    <button onClick={handleClick}>
+      ¡Haz clic para un número aleatorio!
+    </button>
+  );
+};
+
+export default Button;

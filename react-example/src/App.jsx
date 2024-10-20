@@ -1,14 +1,14 @@
-import './App.css'
-import { Button } from './components/Button'
-import { List } from './components/List'
-import { WapperList } from './components/WrapperList'
+import { Button } from './components/Button';
+import React from 'react';
+
 function App() {
   
   return (
-    <>
-    <Button/>
-    </>
-  )
+    <div className="App">
+      <h1>¡Bienvenido a mi aplicación con React y Vite!</h1>
+      <Button />
+    </div>
+  );
 }
 
 export default App
