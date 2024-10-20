@@ -1,19 +1,11 @@
 import { useState } from "react";
 
 export const Button = () => {
-
-    const { text } = props; 
-
-    const[count, setCount] = useState(0);
-
-    function handlerButton() {
-        setCount(count + 1);
-    }
-
+    const [count, setCount] = useState(0);
+  
     return (
-    <button onClick={handlerButton}>
-        { text } { count }
-    </button>
+      <button onClick={() => setCount(count + 5)}>
+        Clicks: {count}
+      </button>
     );
-    
-}
+  };
