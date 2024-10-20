@@ -1,5 +1,5 @@
 import React from 'react';
-import RandomComponent from './components/RandomComponent';
+import CompWithProps from './components/CompWithProps'
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <h1>¡Bienvenido a mi aplicación con React y Vite!</h1>
-      <RandomComponent />
+      <CompWithProps />
     </div>
   );
 }
